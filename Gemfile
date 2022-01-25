@@ -8,3 +8,5 @@ gem "kramdown-syntax-coderay"
 gem "jekyll-seo-tag", github: "jekyll/jekyll-seo-tag"
 
 gem "webrick", "~> 1.7"
+
+gem "i18n", "~> 0.9.5"
