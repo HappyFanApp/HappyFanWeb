@@ -24,7 +24,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://happyfan.es" # the base hostname & protocol for your site, e.g. http://example.com
 author: HappyFanApp
 twitter:
-  username: happyfan_es
+  username: happyfan_es1
   card: summary
 plugins:
   - jekyll-seo-tag

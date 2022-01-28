@@ -1,6 +1,6 @@
 .menu {
     $root: &;
-    background-image: linear-gradient(142deg, $dark 0%, $p_darkest 45%, $dark 90%);
+    background-image: linear-gradient(142deg, $base-blue 0%, $base-fucsia 45%, $base-blue 90%);
     position: fixed;
     left: 0;
     top: 0;
@@ -12,7 +12,7 @@
     float: left;
     width: $menu-size;
     box-sizing: border-box;
-    border-right: 2px solid $dark;
+    //border-right: 2px solid $primary-menu;
     
     @include mobile {
         flex-direction: row;
@@ -61,18 +61,18 @@
 
                 }
                 &.selected {
-                    color: $primary;
+                    color: $primary-menu;
 
                     &::before{
                         content: "";
                         display: block;
                         width: 2px;
                         height: 100%;
-                        background-color: $primary;
+                        background-color: $primary-menu;
                         position: absolute;
                         left: -2px;
                         top: 0px;
-                        box-shadow: $primary 4px 0px 22px;
+                        box-shadow: $primary-menu 4px 0px 22px;
                         @include mobile {
                             height: 2px;
                             width: 100%;

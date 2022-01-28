@@ -1,6 +1,6 @@
 main {
     background-color: $main-bg-color;
-    color: black;
+    color: $base-white;
     float: right;
     width: $content-width-desktop;
     min-height: 300px;
@@ -26,8 +26,9 @@ main {
 }
 footer {
     width: 100%;
+    font-family: 'Righteous', serif;
     text-align: center;
-    color:$p_text;
+    color:$base-blue;
     display: flex;
     justify-content: center;
     font-size: 0.7em;

@@ -5,38 +5,73 @@ show_menu_on_gate_page: False
 minimal_menu: True
 menu_logo: assets/img/avatar.png
 
+count: 2
+
 menu_pages:
 - title: Home
   url: /
   show_on_home: False
-  icon_name: fas fa-home
+  show_new_home: False
+  icon_name: far fa-comment-dots
   category: home
 
-- title: Category 1
-  url: /category-1.html
+- title: Whatsapp
+  url: /whatsapp.html
   show_on_home: True
-  image_url: assets/img/category-1.jpg
-  icon_name: fas fa-dice
-  category: category-1
+  show_new_home: True
+  image_url: assets/img/whatsapp-home.png
+  icon_name: fab fa-whatsapp
+  category: whatsapp
   tooltip: This is category 1
   description: Category 1 description, which is written in menu.yml file under :description property
 
-- title: Category 2
-  url: /category-2.html
+- title: Instagram
+  url: /instagram.html
   show_on_home: True
-  image_url: assets/img/category-2.jpg
-  icon_name: fas fa-cogs
-  category: category-2
+  show_new_home: False
+  image_url: assets/img/instagram-home.png
+  icon_name: fab fa-instagram
+  category: instagram
   tooltip: This is category 2
   description: Category 2 description, which is written in menu.yml file under :description property
 
-- title: About
-  url: about.html
-  show_on_home: False
-  icon_name: fas fa-address-card
-  category: about
+- title: Telegram
+  url: telegram.html
+  show_on_home: True
+  show_new_home: True
+  image_url: assets/img/telegram-home.png
+  icon_name: fab fa-telegram-plane
+  category: telegram
   tooltip: This is about
+  description: Category 2 description, which is written in menu.yml file under :description propert
 
+- title: Facebook
+  url: facebook.html
+  show_on_home: True
+  show_new_home: False
+  icon_name: fab fa-facebook
+  category: facebook
+  tooltip: This is facebook
+  description: Category 2 description, which is written in menu.yml file under :description propert
+
+- title: Twitter
+  url: Twitter.html
+  show_on_home: True
+  show_new_home: True
+  image_url: assets/img/twitter-home.png
+  icon_name: fab fa-twitter
+  category: Twitter
+  tooltip: This is about
+  description: Category 2 description, which is written in menu.yml file under :description propert
+
+- title: Linkedin
+  url: linkedin.html
+  show_on_home: True
+  show_new_home: False
+  icon_name: fab fa-linkedin
+  category: linkedin
+  tooltip: This is linkedin
+  description: Category 2 description, which is written in menu.yml file under :description propert
 menu_contacts:
 - faicon: fab fa-github-alt
   url: 
@@ -44,6 +79,6 @@ menu_contacts:
 - faicon: fab fa-twitter
   url: 
   target: _blank
-- faicon: fas fa-envelope
+- faicon: far fa-envelope
   url:
   target: 

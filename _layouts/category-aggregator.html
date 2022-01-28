@@ -2,8 +2,8 @@
 layout: default
 ---
 <div class="content-container category-aggregator {{ page.category }}">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.summary }}</p>
+    <h1 data-shadow='{{ page.title }}'>{{ page.title }}</h1>
+    <h4>{{ page.summary }}</h4>
     {{content}}
     <hr class="content-separator">
     {% for post in site.posts %}

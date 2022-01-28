@@ -25,7 +25,7 @@ $image-dim: 192px;
     }
     .category {
         &_wrapper {
-            margin-top: 2em;
+            //margin-top: 2em;
             flex: 1;
             width: 100%;
             display: flex;
@@ -51,7 +51,8 @@ $image-dim: 192px;
                 padding-top: 2em;
             }
             &:first-of-type {
-                border-right: 1px solid $base-white;
+                border-right: 1px solid $base-blue;
+                padding-top: 8em;
                 @include mobile {
                     padding-bottom: 2em;
                     padding-top: 0;
@@ -72,8 +73,8 @@ $image-dim: 192px;
                 display: block;
                 width: $image-dim;
                 height: $image-dim;
-                border-radius: 50%;
-                border: 2px solid $p_light;
+                //border-radius: 50%;
+                //border: 4px solid $base-white;
                 overflow: hidden;
                 transition: .5s ease;
                 &:hover {
