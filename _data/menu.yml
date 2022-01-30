@@ -36,7 +36,7 @@ menu_pages:
   description: Ofrece un soporte de primera calidad y consigue más ventas en Instagram
 
 - title: Telegram
-  url: telegram.html
+  url: /telegram.html
   show_on_home: True
   show_new_home: True
   image_url: assets/img/telegram-home.png
@@ -45,16 +45,15 @@ menu_pages:
   tooltip: telegram
   description: Saca todo el potencial a unas de las app más usadas y conecta con tus clientes.
 - title: Facebook
-  url: facebook.html
+  url: /facebook.html
   show_on_home: True
   show_new_home: False
   icon_name: fab fa-facebook
   category: facebook
   tooltip: facebook
   description: Tus clientes podrán contactarte en unas de las plataformas más importantes.
-
 - title: Twitter
-  url: twitter.html
+  url: /twitter.html
   show_on_home: True
   show_new_home: True
   image_url: assets/img/twitter-home.png
@@ -62,9 +61,8 @@ menu_pages:
   category: twitter
   tooltip: twitter
   description: Ser y Estar. Tu audiencia quiere sentirte cercano.
-
 - title: Linkedin
-  url: linkedin.html
+  url: /linkedin.html
   show_on_home: True
   show_new_home: False
   icon_name: fab fa-linkedin
@@ -90,3 +88,7 @@ menu_contacts:
 - faicon: fab fa-linkedin
   url:
   target:
+menu_setting:
+- faicon: fas fa-user-cog
+  url: /
+  target: _blank

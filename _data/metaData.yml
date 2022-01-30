@@ -1,7 +1,7 @@
 author: HappyFan
 avatar_url: assets/img/avatar.png
 lightTheme: False
-show_menu_logo_on_home_page: True
+show_menu_logo_on_home_page: False
 cookies:
   enabled: True
   message: HappyFan.es ¡NO usa Cookie!

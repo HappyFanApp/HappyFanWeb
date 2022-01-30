@@ -13,15 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Happy Fan
-tagline: A site showing the usage of Jekyll custom theme
+title: HappyFan
+tagline: ¿Que ventajas 💲 tiene usar el HappyFan? 
 email: _@happpyfan.es
 description: >- # this means to ignore newlines until "baseurl:"
-  This website was created as a demonstration for Jekyll custom theme
-  named minimal-categorized. Its main feature is to aggregate posts into
-  categories, witch are easily distinguishable
+  Redirige los chats de todas tus redes sociales hacia dentro de tu compañía. Todos los departamentos de tu compañía podrán; responder al instante a los chats que soliciten respuestas personalizadas, hacer sorteos, concursos, votaciones, Paytweet, PayPost. Nuestra misión es que podáis minar fanáticos de vuestra marca, rompiendo la brecha que hay entre las tecnologías de la información y las tecnologías de operación.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://happyfan.es" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://wwww.happyfan.es" # the base hostname & protocol for your site, e.g. http://example.com
 author: HappyFanApp
 twitter:
   username: happyfan_es1
