@@ -22,8 +22,8 @@ menu_pages:
   image_url: assets/img/whatsapp-home.png
   icon_name: fab fa-whatsapp
   category: whatsapp
-  tooltip: This is category 1
-  description: Category 1 description, which is written in menu.yml file under :description property
+  tooltip: whatsapp
+  description: Conecta con usuarios en la app de mensajería más popular del mundo y con nuestra API WhatsApp Business.
 
 - title: Instagram
   url: /instagram.html
@@ -32,8 +32,8 @@ menu_pages:
   image_url: assets/img/instagram-home.png
   icon_name: fab fa-instagram
   category: instagram
-  tooltip: This is category 2
-  description: Category 2 description, which is written in menu.yml file under :description property
+  tooltip: instagram
+  description: Ofrece un soporte de primera calidad y consigue más ventas en Instagram
 
 - title: Telegram
   url: telegram.html
@@ -42,27 +42,26 @@ menu_pages:
   image_url: assets/img/telegram-home.png
   icon_name: fab fa-telegram-plane
   category: telegram
-  tooltip: This is about
-  description: Category 2 description, which is written in menu.yml file under :description propert
-
+  tooltip: telegram
+  description: Saca todo el potencial a unas de las app más usadas y conecta con tus clientes.
 - title: Facebook
   url: facebook.html
   show_on_home: True
   show_new_home: False
   icon_name: fab fa-facebook
   category: facebook
-  tooltip: This is facebook
-  description: Category 2 description, which is written in menu.yml file under :description propert
+  tooltip: facebook
+  description: Tus clientes podrán contactarte en unas de las plataformas más importantes.
 
 - title: Twitter
-  url: Twitter.html
+  url: twitter.html
   show_on_home: True
   show_new_home: True
   image_url: assets/img/twitter-home.png
   icon_name: fab fa-twitter
-  category: Twitter
-  tooltip: This is about
-  description: Category 2 description, which is written in menu.yml file under :description propert
+  category: twitter
+  tooltip: twitter
+  description: Ser y Estar. Tu audiencia quiere sentirte cercano.
 
 - title: Linkedin
   url: linkedin.html
@@ -70,15 +69,24 @@ menu_pages:
   show_new_home: False
   icon_name: fab fa-linkedin
   category: linkedin
-  tooltip: This is linkedin
-  description: Category 2 description, which is written in menu.yml file under :description propert
+  tooltip: linkedin
+  description: La red de contactos profesionales más popular del mundo, con solo un chat. 
 menu_contacts:
-- faicon: fab fa-github-alt
+- faicon: fab fa-telegram-plane
   url: 
   target: _blank
 - faicon: fab fa-twitter
   url: 
   target: _blank
-- faicon: far fa-envelope
+- faicon: fab fa-whatsapp
   url:
   target: 
+- faicon: fab fa-instagram
+  url:
+  target: 
+- faicon: fab fa-facebook
+  url:
+  target:
+- faicon: fab fa-linkedin
+  url:
+  target:

@@ -7,4 +7,12 @@
 <footer>
     <p class="copyrights">
     </p>
+    <div class="">        :\   
+        {% for contact in site.data.menu.menu_contacts %}
+
+        <a href="{{ contact.url | relative_url }}" target="{{ contact.target }}">
+            <i class="{{ contact.faicon }}"></i>
+        </a>
+        {% endfor %}
+    </div>
 </footer>

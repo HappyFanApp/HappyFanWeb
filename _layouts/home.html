@@ -7,7 +7,7 @@ category: home
     <h1 data-shadow='{{ page.title }}'>
         {{ page.title }}
     </h1>
-    <p class="page-summary">{{ page.summary }}</p>
+    <h4 class="page-summary">{{ page.summary }}</h4>
     <!--- En el menu hay dos booleanos, uno de ellos dice si se muestra y el otro si es un nuevo menu. -->
     {% for menu_item in site.data.menu.menu_pages %}
         {% if menu_item.show_new_home %}
@@ -15,7 +15,7 @@ category: home
         <div class="category_wrapper">
             <div class="category_container">
                 <div class="category_image">
-                    <h1 class='screen-mobile' href='{{ menu_item.url | relative_url }}'>
+                    <h1 class="screen-mobile" href='{{ menu_item.url | relative_url }}'>
                         <i class='{{menu_item.icon_name}}'></i>
                       </h1>
                 </div>
