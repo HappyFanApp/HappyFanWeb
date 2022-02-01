@@ -10,3 +10,8 @@ gem "jekyll-seo-tag", github: "jekyll/jekyll-seo-tag"
 gem "webrick", "~> 1.7"
 
 gem "i18n", "~> 0.9.5"
+
+gem "eventmachine", ">= 0"
+
+gem "wdm", "~> 0.1.1"
+
