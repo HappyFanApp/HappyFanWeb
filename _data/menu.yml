@@ -10,7 +10,7 @@ count: 2
 menu_pages:
 - title: Home
   url: /
-  show_on_home: False
+  show_on_home: False 
   show_new_home: False
   icon_name: far fa-comment-dots
   category: home
@@ -90,5 +90,5 @@ menu_contacts:
   target:
 menu_setting:
 - faicon: fas fa-user-cog
-  url: /
+  url: /admin.html
   target: _blank
