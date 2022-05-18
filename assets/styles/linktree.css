@@ -27,7 +27,7 @@ h1 {
     display: inline-block;
     color: #fafafa;
     font-family: 'Righteous';
-    font-size: 3em; 
+    font-size: 3.5em; 
     text-shadow: .03em .03em 0 hsla(247, 57%, 50%,1);
 
     margin: 0;
@@ -42,7 +42,7 @@ a {
 }
 
 h5 {
-	font-size: 19px;
+	font-size: 2.5em;
     text-shadow: .03em .03em 0 hsla(247, 57%, 50%,1);
 }
 
@@ -75,7 +75,7 @@ h5:hover {
 .boxes {
 	padding-top: 30px;
 	line-height: 30px;
-	width: 25%;
+	width: 35%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -99,7 +99,7 @@ h5:hover {
 
 @media (max-width: 800px) {
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   h5 {
     font-size: 2em;
@@ -109,7 +109,7 @@ h5:hover {
 		height: 150px;
 	}
 .boxes{
-    width: 100%;
+    width: 80%;
 }
 
 }
