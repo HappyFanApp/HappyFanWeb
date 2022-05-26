@@ -1,4 +1,4 @@
-$image-dim: 192px;
+$image-dim: 150px;
 
 .home {
     display: flex;
@@ -19,9 +19,9 @@ $image-dim: 192px;
         align-items: center;
     }
     a {
-        &:hover {
-            text-decoration: underline $primary;
-        }
+        //&:hover {
+        //    text-decoration: underline $primary;
+        //}
     }
     .category {
         &_wrapper {
@@ -64,7 +64,7 @@ $image-dim: 192px;
         &_image {
             justify-content: center !important;
             display: flex;
-            height: $image-dim * 1.4;
+            height: $image-dim;
             align-items: center;
             @include mobile {
                 height: $image-dim * 1.1;

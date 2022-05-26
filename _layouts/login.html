@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
   <head>
+    <link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     {% if site.data.metaData.cookies.enabled %}
       <script>
         {% include cookies.js %}
@@ -17,6 +19,9 @@
       <main class="content-layout">
           {{ content }}
           {% include footer.html %}
+          <script>
+            {% include login.js %}
+          </script>
       </main>
   </body>
 </html>

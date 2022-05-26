@@ -7,7 +7,41 @@ category: home
     <h1 data-shadow='{{ page.title }}'>
         {{ page.title }}
     </h1>
-    <h4 class="page-summary">{{ page.summary }}</h4>
+    <div class="content-container collection ">
+        <div class="group ">
+            <div class="title">{{page.title_sumary_1}}</div>
+            <ul>
+                <a class="item" >
+                    <div class="icon"><span style='font-size:30px;'>💬</span></div>
+                    <div class="content">
+                        <h4>{{page.content_sumary_1}}</h4>
+                        <div class="description">
+                            {{ page.summary_1}}
+                        </div>
+                    </div>
+                </a>
+            </ul>
+        </div>
+        <div class="group">
+            <div class="title">{{page.title_sumary_2}}</div>
+            <ul>
+                <a class="item" >
+                    <div class="icon"><span style='font-size:30px;'>📱</span></div>
+                    <div class="content">
+                        <h4>{{page.content_sumary_2}}</h4>
+                        <div class="description">
+                            {{ page.summary_2}}
+                        </div>
+                    </div>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="content-container">
+        <button class="btn btn-unicorn start-cursor"> <a class="start-cursor" href="/start"><h4>Press Start</h4></a></button>
+        <button class="btn btn-unicorn game-cursor"> <a class="game-cursor" href="/demo"><h4>Demo</h4></a></button>
+        <button class="btn btn-unicorn insertCoin-cursor"> <a class="insertCoin-cursor insertCoin" href="/shut_up_and_take_my_money"><h4>Insert Coin</h4></a></button>
+    </div>
     <!--- En el menu hay dos booleanos, uno de ellos dice si se muestra y el otro si es un nuevo menu. -->
     {% for menu_item in site.data.menu.menu_pages %}
         {% if menu_item.show_new_home %}
@@ -23,9 +57,9 @@ category: home
                     <a href="{{ menu_item.url | relative_url }}">
                     <h2> {{ menu_item.title }} </h2>
                     </a>
-                    <p>
+                    <h4>
                         {{ menu_item.description }} 
-                    </p>
+                    </h4>
                 </div>
             </div>
             {% endif %}
@@ -41,9 +75,9 @@ category: home
                     <a href="{{ menu_item.url | relative_url }}">
                     <h2> {{ menu_item.title }} </h2>
                     </a>
-                    <p>
+                    <h4>
                         {{ menu_item.description }} 
-                    </p>
+                    </h4>
                 </div>
             </div>
         </div><!-- Este div es de category_wrapper -->

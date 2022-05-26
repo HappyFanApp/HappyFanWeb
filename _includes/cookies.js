@@ -1,5 +1,5 @@
 (function() {
-    const consentPropName = "cookies_consent";
+    const consentPropName = "cookies_alert";
     const storageType = localStorage;
 
     shouldShowCookieConsent = () => !storageType.getItem(consentPropName);

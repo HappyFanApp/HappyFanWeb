@@ -1,12 +1,14 @@
 <script>
+    {% include tab.js %}
+</script>
+<script>
     window.addEventListener("load", () => {
         document.getElementsByClassName("copyrights")[0].innerHTML = 
             `Copyrights &copy; ${new Date().getFullYear()} {{ site.data.metaData.author }}`;
     });
 </script>
 <footer>
-    <p class="copyrights">
-    </p>
+    <p class="copyrights"></p>
     <!--    
     <div class="">        :\   
         {% for contact in site.data.menu.menu_contacts %}

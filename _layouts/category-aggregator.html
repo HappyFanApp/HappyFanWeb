@@ -4,6 +4,11 @@ layout: default
 <div class="content-container category-aggregator {{ page.category }}">
     <h1 data-shadow='{{ page.title }}'>{{ page.title }}</h1>
     <h4>{{ page.summary }}</h4>
+    <div class="content-container">
+        <button class="btn btn-unicorn start-cursor"> <a class="start-cursor" href="/start"><h4>Press Start</h4></a></button>
+        <button class="btn btn-unicorn game-cursor"> <a class="game-cursor" href="/demo"><h4>Demo</h4></a></button>
+        <button class="btn btn-unicorn insertCoin-cursor"> <a class="insertCoin-cursor insertCoin" href="/shut_up_and_take_my_money"><h4>Insert Coin</h4></a></button>
+    </div>
     {{content}}
     <hr class="content-separator">
     {% for post in site.posts %}

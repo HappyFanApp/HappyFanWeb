@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Linktree</title>
+        <title>HappyFan</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
         <link href="assets/styles/linktree.css" rel="stylesheet">
+        <script>
+            window.titleInterval = null;
+            window.onblur = function() {
+              var title = " Todos tus chats 🦄 en una misma 🦄 plataforma 🦄";
+              window.titleInterval = setInterval(function() {
+                title = title.substring(1, title.length) + title.charAt(0);
+                document.title = title;
+                }, 100); }
+              
+            window.onfocus = function () {  
+              clearInterval(window.titleInterval);
+              document.title = document.querySelector("meta[property='og:title']").getAttribute("content"); 
+            }
+        </script>
     </head>
 
     <body>
@@ -27,16 +42,16 @@
 
             <div class="boxes">
                 
-                <div class="box">
-                    <a href="onepager"><h5>Onepager</h5></a>
+                <div class="box unicorn-cursor">
+                    <a class="unicorn-cursor" href="onepager"><h5>Onepager</h5></a>
                 </div>
 
-                <div class="box">
-                    <a href="deck"><h5>PitchDeck</h5></a>
+                <div class="box unicorn-cursor">
+                    <a class="unicorn-cursor" href="deck"><h5>PitchDeck</h5></a>
                 </div>
 
-                <div class="box">
-                    <a href="/"><h5>Website</h5></a>
+                <div class="box unicorn-cursor">
+                    <a class="unicorn-cursor" href="/"><h5>Website</h5></a>
                 </div>
 
             </div>

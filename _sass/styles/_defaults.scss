@@ -2,7 +2,7 @@ h1 {
     display: inline-block;
     color: $base-white;
     font-family: 'Righteous', serif;
-    font-size: 11em; 
+    font-size: 9em; 
     text-shadow: .03em .03em 0 hsla(247, 57%, 50%,1);
 
     margin: 0;
@@ -109,12 +109,85 @@ a, p, li {
       box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
     }
   }
+.btn h4{
+  font-size: 1.3em; 
+    font-family: 'Press Start 2P', cursive;;
+    color: $primary;
+    text-shadow: -1px 0 0 #fdff2a, -2px 0 0 #df4a42, 1px 0 0 #91fcfe, 2px 0 0 #4405fc;
+}
+.insertCoin{
+    animation: blink 1s steps(4, start) infinite;
+}
+@-moz-keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-o-keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+.parpadea {
+
+    animation-name: parpadeo;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+@-moz-keyframes parpadeo{
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes parpadeo {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
   
   .btn-unicorn {
     border: 3px solid #c45ace;
     
   }
-  
+  .start-cursor{
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🏁</text></svg>")
+    16 0,
+    auto;
+  }  
+  .game-cursor{
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎮</text></svg>")
+    16 0,
+    auto;
+  }
+  .insertCoin-cursor{
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>💸</text></svg>")
+    16 0,
+    auto;
+  }
   .unicorn-cursor {
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🦄</text></svg>")
         16 0,
@@ -127,7 +200,7 @@ a, p, li {
         font-size: 15px;
     }
     h1 {
-        font-size: 5em;
+        font-size: 4em;
     }
     main {
         .content-container {
@@ -136,6 +209,7 @@ a, p, li {
         }
     }
     .screen-mobile {
-        font-size:13em;
+        font-size:10em;
     }
+
 }
