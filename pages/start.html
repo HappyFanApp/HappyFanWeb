@@ -5,28 +5,76 @@ permalink: start.html
 category: home
 ---
 <div class="content-container">
-    <div class="registration-form">
+    <div class="registration-form" id="replay" style="display: block">
     <header>
-        <h1 class="insertCoin">Entrar</h1>
-        <p>Accede a tu cuenta </p>
+        <h1 class="insertCoin">!Entrar</h1>
+        <p id="sign-up">> Nuevo Usuario</p>
+        <p id="tutorial">> Tutorial</p>
     </header>
     <form>
-        <div class="input-section email-section">
-        <input class="email" type="email" placeholder="NÚMERO DE WHATSAPP +34 " autocomplete="off"/>
-        <div class="animated-button"><span class="icon-paper-plane"><i class="fa fa-mobile"></i></span><span class="next-button email"><i class="fa fa-arrow-up"></i></span></div>
+        <div class="input-section tel-section">
+        <input class="tel" type="tel" placeholder="Pon aquí el código" autocomplete="on" title="Escríbenos un !entrar en Whatsapp para recibir tu código" required/>
+        <div class="animated-button">
+            <span class="icon-paper-plane">
+                <i class="fa fa-lock"></i></span><span class="next-button tel"><i class="fa fa-arrow-right"></i>
+            </span>
+        </div>
         </div>
         <div class="input-section password-section folded">
-        <input class="password" type="password" placeholder="INTRODUCE EL CÓDIGO"/>
-        <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password"><i class="fa fa-arrow-up"></i></span></div>
-        </div>
-        
-        <div class="input-section repeat-password-section folded">
-        <input class="repeat-password" type="password" placeholder="REPEAT YOUR PASSWORD HERE"/>
-        <div class="animated-button"><span class="icon-repeat-lock"><i class="fa fa-lock"></i></span><span class="next-button repeat-password"><i class="fa fa-paper-plane"></i></span></div>
-        </div>        
+        <input class="password" type="password" placeholder="Número o Nick" title="Escribe tú número de Whatsapp con el que te has registrado o tú Nick"/>
+        <div class="animated-button"><span class="icon-lock"><i class="fa fa-mobile"></i></span><span class="next-button password"><i class="fa fa-arrow-right"></i></span></div>
+        </div>      
         <div class="success"> 
         <p>ACCOUNT CREATED</p>
         </div>
     </form>
     </div>
+    <div class="registration-form" style="display: none" id="play">
+        <header>
+            <h1 class="insertCoin">!REGISTRAR</h1>
+            <p id="log-in">< Atrás</p>
+        </header>
+        <form>
+            <div class="input-section tel-section">
+            <input class="tel" type="tel" placeholder="Número de Whatsapp" autocomplete="on" required/>
+            <div class="animated-button">
+                <span class="icon-paper-plane">
+                    <i class="fa fa-mobile"></i></span><span class="next-button tel"><i class="fa fa-arrow-up"></i>
+                </span>
+            </div>
+            </div>
+            <div class="input-section password-section folded">
+            <input class="password" type="password" placeholder="Pon aquí el código"/>
+            <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password"><i class="fa fa-arrow-up"></i></span></div>
+            </div>
+            
+            <div class="input-section repeat-password-section folded">
+            <input class="repeat-password" type="password" placeholder="Elige un nickname"/>
+            <div class="animated-button"><span class="icon-repeat-lock"><i class="fa fa-lock"></i></span><span class="next-button repeat-password"><i class="fa fa-paper-plane"></i></span></div>
+            </div>        
+            <div class="success"> 
+            <p>ACCOUNT CREATED</p>
+            </div>
+        </form>
+        </div>
+        <div class="registration-form" style="display: none;" id="qr">
+            <header>
+                <h1 class="insertCoin">!TUTORIAL</h1>
+                <p id="qr-back">< Atrás</p>                
+            </header>
+            <div class="bg">
+            <ul>
+                <li>Abre WhatsApp> toca <b>Nuevo chat</b>.</li>
+                <li> Nuevo contacto> toca el ícono <b>QR</b>.</li>
+                <li>Elíge <b>ESCANEAR CÓDIGO</b>.</li><img src="assets/img/qr_wa.png" alt="" style="width:180px;align-content:center"> 
+                <li>Toca> AÑADIR contacto.</li>
+                <li>Escribe lo siguiente> <b>!entrar</b>.</li>
+            </ul>
+                
+            </div>
+            <div class="down">                               
+                <p>Wuolah, fácil</p>
+                </div>
+            </div>
+        </div>  
 </div>

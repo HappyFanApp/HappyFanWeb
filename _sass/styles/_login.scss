@@ -1,18 +1,5 @@
 $input-height: 75px;
 
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-  }
-
 .registration-form {
   width: 400px;
   position: absolute;
@@ -28,6 +15,7 @@ $input-height: 75px;
     background: white;
     padding: 20px 40px;
     border-radius: 15px 15px 0 0;
+    height: 120px;
     
     h1 {
       font-weight: 900;
@@ -41,14 +29,19 @@ $input-height: 75px;
     }
     
     p {
+      font-family: 'Press Start 2P', cursive;;
       word-spacing: 0px;
       color: #c45ace; 
-      font-size: 20x;
+      font-size: 13px;
       margin: 0;
       margin-top: 5px;
+      cursor: pointer;
+    }
+    p:hover {
+      color:#4836c7;
+      font-size: 15px;
     }
   }
-  
   form {
     position: relative;
   }
@@ -104,21 +97,26 @@ $input-height: 75px;
   }
   
   form input {
+    font-family: 'Press Start 2P', cursive;;
     background: lighten(rgb(243, 243, 251), 5%);
     color:#c45ace;
     width: 80%;
     border: 0;
     padding: 20px 40px;
     margin: 0;
-    font-size: 17px;
+    font-size: 12px;
     
     &:focus {
       outline: none;
     }
     
     &::placeholder {
-      color: #c45ace;
+      color: #4fc2f7;
       font-weight: 100;
+      [data-title]:hover{
+        color: #4fc2f7;
+        font-weight: 100;
+      }
     }
   }
 }
@@ -176,8 +174,37 @@ $input-height: 75px;
     color: white;
     font-weight: 900;
     letter-spacing: 2px;
-    font-size: 18px;
     width: 100%;
     text-align: center;
   }
+}
+.down {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: $input-height;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0px 0px 100px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in;
+  background: #4fc2f7;
+  margin-top: 0px;
+  
+  p {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+  }
+}
+.bg{
+  background:white;
+  text-align: left;
+  padding: 5px 60px;
+  color: #c45ace; 
 }
