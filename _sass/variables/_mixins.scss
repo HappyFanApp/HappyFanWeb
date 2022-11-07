@@ -37,10 +37,5 @@
     a {
       transition: all 300ms ease 0s;
       cursor: pointer;
-      text-decoration-line: none;
-      text-decoration: underline $primary;
-      &:hover {
-          color: $primary;
-      }
   }
 }

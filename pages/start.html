@@ -5,7 +5,7 @@ permalink: start.html
 category: home
 ---
 <div class="content-container">
-    <div class="registration-form" id="replay" style="display: block">
+    <div class="registration-form" id="replay" style="display: none">
     <header>
         <h1 class="insertCoin">!Entrar</h1>
         <p id="sign-up">> Nuevo Usuario</p>
@@ -57,24 +57,18 @@ category: home
             </div>
         </form>
         </div>
-        <div class="registration-form" style="display: none;" id="qr">
+        <div class="registration-form" style="display: block;" id="#qrDisplay">
             <header>
-                <h1 class="insertCoin">!TUTORIAL</h1>
-                <p id="qr-back">< Atrás</p>                
+                <h1 class="insertCoin">!entrar</h1>
+                <p><a id="qr" target="blank" >< 1 Escanear QR CODE ></a></p>
+                <p><a id="qr" target="blank" >< 2 Enviar WhatsApp ></a></p>
             </header>
-            <div class="bg">
-            <ul>
-                <li>Abre WhatsApp> toca <b>Nuevo chat</b>.</li>
-                <li> Nuevo contacto> toca el ícono <b>QR</b>.</li>
-                <li>Elíge <b>ESCANEAR CÓDIGO</b>.</li><img src="assets/img/qr_wa.png" alt="" style="width:180px;align-content:center"> 
-                <li>Toca> AÑADIR contacto.</li>
-                <li>Escribe lo siguiente> <b>!entrar</b>.</li>
-            </ul>
-                
-            </div>
-            <div class="down">                               
-                <p>Wuolah, fácil</p>
+            <div  class="bg">
+                <div id="qrcode" class="qr-code" href="" >
                 </div>
             </div>
-        </div>  
+            <div class="down">                               
+                <p id="code">ESPERANDO MENSAJE</p>
+            </div>
+    </div> 
 </div>

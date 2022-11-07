@@ -32,14 +32,14 @@ $input-height: 75px;
       font-family: 'Press Start 2P', cursive;;
       word-spacing: 0px;
       color: #c45ace; 
-      font-size: 13px;
+      font-size: 10px;
       margin: 0;
       margin-top: 5px;
       cursor: pointer;
     }
     p:hover {
       color:#4836c7;
-      font-size: 15px;
+      font-size: 13px;
     }
   }
   form {
@@ -179,6 +179,7 @@ $input-height: 75px;
   }
 }
 .down {
+  font-family: 'Press Start 2P', cursive;;
   width: 100%;
   position: absolute;
   display: flex;
@@ -202,9 +203,41 @@ $input-height: 75px;
     text-align: center;
   }
 }
+.down-success {
+  font-family: 'Press Start 2P', cursive;;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: $input-height;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0px 0px 100px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in;
+  background: limegreen;
+  margin-top: 0px;
+  
+  p {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+  }
+}
 .bg{
   background:white;
   text-align: left;
   padding: 5px 60px;
   color: #c45ace; 
+}
+.qr-code {
+  width: 300px;
+  padding: 10px;
+}
+a {
+  text-decoration:none;
 }
