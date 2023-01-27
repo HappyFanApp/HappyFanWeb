@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HappyFan</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+        <link href="assets/styles/linktree.css" rel="stylesheet">
+        <script>
+            window.titleInterval = null;
+            window.onblur = function() {
+              var title = " Todos tus chats 🦄 en una misma 🦄 plataforma 🦄";
+              window.titleInterval = setInterval(function() {
+                title = title.substring(1, title.length) + title.charAt(0);
+                document.title = title;
+                }, 100); }
+              
+            window.onfocus = function () {  
+              clearInterval(window.titleInterval);
+              document.title = document.querySelector("meta[property='og:title']").getAttribute("content"); 
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <div class="content-container collection">
+
+    <!-- Principio del widget integrado de Calendly -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/happyfan/entrevista-frontend?background_color=c45ace&primary_color=4836c7" style="min-width:420px;height:730px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Final del widget integrado de Calendly -->
+
+        </div>
+
+    </body>
+
+</html>
